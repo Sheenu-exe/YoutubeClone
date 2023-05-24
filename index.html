@@ -1,0 +1,190 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d9a26642d3.js" crossorigin="anonymous"></script>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Youtube Clone with HTML & CSS</title>
+  </head>
+  <style>
+    *{
+      background-color: #0f0f0f;
+    }
+    .topnav{
+      border-bottom: 0.1em rgb(70, 70, 70) solid;
+      height:65px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      
+    }
+
+    .menu{
+      text-decoration: none;
+      margin:0px;
+    }
+    .logo{
+      width:150px;
+      height:60px;
+      margin:5px 0px;
+      
+    }
+    .pfp{
+      border-radius: 100%;
+      width:30px;
+      height:30px;
+      padding:0px;
+      margin-bottom: 20px;
+      margin-right: 15px;
+      margin-left:15px;
+    }
+    .list{
+      list-style: none;
+      display: inline-flex;
+      flex-direction: row;
+      padding:0px;
+      height:5px;
+    }
+    .li{
+      margin: 0px 15px;
+      font-size: 30px;
+    }
+     a{
+      color: white;
+      padding:0;
+     }
+    
+    a::before{
+      color: black;
+    }
+    a::after{
+      color: purple;
+    }
+    .search{
+      background-color: #0f0f0f;;
+      height:40px;
+      border: 1px rgb(70, 70, 70) solid ;
+      border-radius: 50px 50px 50px 50px;
+      margin:5px 0;
+      
+    
+      
+    }
+    input{
+      background: none;
+      border: 0px;
+      width:660px;
+      height:40px;
+      text-decoration: none;
+      border-radius: 50px 0px 0px 50px;
+      padding-left: 15px;
+      color: white;
+      font-size: 20px;
+      
+    }
+    button{
+      background-color:rgb(50, 50, 50);
+      border:0px;
+      color:white;
+      border-left:1px rgb(70, 70, 70) solid ;
+      height:40px;
+      width: 40px;
+      border-radius: 0px 50px 50px 0px;
+      font-size: 20px;
+    }
+    i{
+      background: none;
+    }
+    p{
+      color:white;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 40px;
+      padding: 0px;
+      margin-top:5px;
+      margin-right:180px;
+      
+    }
+    .recommended{
+      display: flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+    }
+    h2{
+      color: white;
+      font-family: 'Roboto', sans-serif;
+    }
+    .vid1{
+      font-family: 'Roboto', sans-serif;
+      font-size: 30px;
+      font-weight:bolder
+    }
+    .rvp1{
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      word-wrap: break-word;
+    }
+    .rvv{
+    margin:0px 2px;
+    }
+    
+    
+  </style>
+  <body>
+     <div class="topnav" id="topnav">
+      <img class="logo" src="https://i.ibb.co/tBPZZsC/CITYPNG-COM-HD-White-Youtube-YT-Logo-PNG-4096x1498.png" alt="">
+     <div class="search" id="search"><input type="text" placeholder="Search..."><button><i class="fas fa-search fa-S"></i></button></div>
+     <div class="menu">
+       
+       <ul class="list">
+        
+        <li class="li" ><a href="#home"><i id="lg" class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li class="li" ><a href="#about"><i class="fa-solid fa-video fa-lg"></i></i></a></li>
+        <li class="li" ><a href="#Subscriptions"><i id="lg" class="fa fa-bell" aria-hidden="true"></i></a></li>
+        <img class="pfp" src="https://i.ibb.co/9pyshrM/eyeemfiltered1667889265968.jpg" alt="">
+        </ul>  
+     </div> 
+      </div>
+      <div class="video1">
+        <iframe width="1360" height="645" src="https://www.youtube.com/embed/KwKsjyl_Fd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p class="vid1">iPhone 14 Pro Max VS S23 Ultra Unboxing - ASMR</p>
+      </div>
+      <h2>Recommended Videos:- </h2><br>
+      <div class="recommended">
+        
+        <div class="rv1">
+          <iframe class="rvv" width="410" height="315" src="https://www.youtube.com/embed/NZok45c3Evg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <p class="rvp1">LUNCH IN 5 RUPEES 🔥🔥🔥</p>
+        </div> 
+        <div class="rv1">
+          <iframe class="rvv" width="410" height="315" src="https://www.youtube.com/embed/DFL5vbHePSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <p class="rvp1">Shark Tank India 2</p>
+        </div> 
+        <div class="rv1">
+          <iframe class="rvv" width="410" height="315" src="https://www.youtube.com/embed/J1cqaKDXY3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <p class="rvp1">Pinwheel Fish Fight |Nat Geo</p>
+        </div> 
+        <div class="rv1">
+          <iframe class="rvv" width="400" height="315" src="https://www.youtube.com/embed/eZ2Rt2DVGdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <p class="rvp1">Underwater Killers</p>
+        </div> 
+        <div class="rv1">
+          <iframe class="rvv" width="410" height="315" src="https://www.youtube.com/embed/cTQ3Ko9ZKg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <p class="rvp1">Our Planet | Frozen Worlds</p>
+        </div> 
+        <div class="rv1">
+          <iframe class="rvv" width="410" height="315" src="https://www.youtube.com/embed/um2Q9aUecy0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <p class="rvp1">Our Planet | Jungles</p>
+        </div> 
+        
+      </div>
+      <h4 style="text-align: center;color: white;">Youtube Clone by Sachin</h4>
+
+</body>
+</html
